@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.line{
+    height: 5px;
+    width: 200px;
+    background-color: rgb(46, 90, 172);
+    margin: 5px;
+}
+
+#eng{
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 39px;
+    color: rgb(54, 109, 212);
+}
+
+#nep{
+    font-size: 39px;
+    color: rgb(54, 109, 212);
+}
+
+.image {
+    width: 62px;
+    height: 62px;
+    animation: spin 4s linear infinite;
+    -webkit-animation: spin 4s linear infinite;
+    -moz-animation: spin 4s linear infinite;
+}
+
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+
+.image:hover{
+    width: 64px;
+    height: 64px;
+}
+
+footer{
+    position: fixed;
+    bottom: 15px;
+    text-align: center;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: rgb(58, 114, 219);
+    font-size: 16px;
+}
